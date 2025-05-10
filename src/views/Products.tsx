@@ -1,6 +1,7 @@
 import { ActionFunctionArgs, Link, useLoaderData } from "react-router-dom"
 import { getProducts, updateProductAvailability } from "../services/ProductServices"
 import ProductDetails from "../components/ProductDetails"
+import { Product } from "../types"
 
 export async function loader() {
     const products = await getProducts()
